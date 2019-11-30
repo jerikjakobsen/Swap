@@ -1,11 +1,12 @@
 import React from 'react'
 import {View, Text, StyleSheet, Button} from 'react-native'
+import MapView from 'react-native-maps'
 
 const Screen1 = props => {
         return (
             <View style={styles.container}>
                 <Text>Screen 1</Text>
-                <Button title="Go to Screen 2" onPress={() => props.navigation.navigate({routeName: 'Screen2'})}/>
+                <Button title="Go to Maps" onPress={() => props.navigation.navigate({routeName: 'Maps'})}/>
             </View>
         )
 }
